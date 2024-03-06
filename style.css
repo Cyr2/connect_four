@@ -22,10 +22,6 @@ button {
   cursor: pointer;
 }
 
-img {
-    pointer-events: none;
-}
-
 #game {
     display: flex;
     align-items: center;
@@ -66,6 +62,10 @@ img {
 .menu button:hover {
     transform: translateY(10px);
     box-shadow: 0 0 0 black;
+}
+
+.menu button:hover img {
+    transform: rotateY(180deg);
 }
 
 .menu button:last-child {
@@ -238,6 +238,10 @@ nav button:hover {
   top: 0;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.player img:hover {
+    transform: translate(-50%, -50%) rotateY(180deg);
 }
 
 .player p {

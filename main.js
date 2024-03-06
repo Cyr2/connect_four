@@ -27,7 +27,7 @@ function firstEvent(){
 
 function start(){
     game.innerHTML = `<div class="player">
-    <img src="public/player-one.svg" alt="Player one Logo">
+    <img src="public/player-one.svg" draggable="false" alt="Player one Logo">
     <h3>PLAYER 1</h3>
     <p id="playerRedScore">0</p>
   </div>
@@ -58,7 +58,7 @@ function start(){
     </div>
   </div>
   <div class="player">
-    <img src="public/player-two.svg" alt="Player two Logo">
+    <img src="public/player-two.svg" draggable="false" alt="Player two Logo">
     <h3>PLAYER 2</h3>
     <p id="playerYellowScore">0</p>
   </div>`
