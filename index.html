@@ -10,6 +10,39 @@
     <script src="main.js" defer async></script>
 </head>
 <body>
-  <div id="board"></div>
+  <div id="game">
+    <div class="player">
+      <img src="public/player-one.svg" alt="Player one Logo">
+      <h3>PLAYER 1</h3>
+      <p id="playerRedScore">0</p>
+    </div>
+    <div class="gameBoard">
+      <nav>
+        <button id="menu">MENU</button>
+        <img src="public/logo.svg" alt="">
+        <button id="restart">RESTART</button>
+      </nav>
+      <img src="public/board-layer-white-large.svg" class="boardLayer" alt="">
+      <div class="hover"><img id="markerRed" src="public/marker-red.svg" alt=""><img id="markerYellow" src="public/marker-yellow.svg" alt=""></div>
+      <div id="board"></div>
+      <img src="public/board-layer-black-large.svg" class="boardLayerBlack" alt="">
+    </div>
+    <div class="turn">
+      <div class="containerContent">
+        <div class="content">  
+          <h3 id="playerTurn">PLAYER 1 TURN</h3>
+          <p id="timer">30s</p>
+        </div>
+        <img src="public/turn-background-red.svg" id="turnRed" alt="Turn Red bg">
+        <img src="public/turn-background-yellow.svg" id="turnYellow" alt="Turn Yellow bg">
+      </div>
+    </div>
+    <div class="player">
+      <img src="public/player-two.svg" alt="Player two Logo">
+      <h3>PLAYER 2</h3>
+      <p id="playerYellowScore">0</p>
+    </div>
+  </div>
+  <footer></footer>
 </body>
 </html>
