@@ -93,7 +93,7 @@ function init() {
   document.querySelector('#contentTimer').style.display = "block";
   document.querySelector('#contentRematch').style.display = "none";
   document.querySelector('footer').style.backgroundColor = "#5C2DD5";
-
+  document.querySelector('.hover').style.display = 'block';
   document.querySelector('#playerTurn').textContent = "Player 1's turn";
   document.querySelector('#turnRed').style.display = 'block';
   document.querySelector('#turnYellow').style.display = 'none';
@@ -328,7 +328,7 @@ function win(player, move){
     score.textContent = parseInt(score.textContent) + 1;
 
     document.querySelector('#winner').textContent = playerWin;
-
+    document.querySelector('.hover').style.display = 'none';
     document.querySelector('#contentTimer').style.display = "none";
     document.querySelector('#contentRematch').style.display = "block";
     document.querySelector('footer').style.backgroundColor = player === "red" ? "#FD6687" : "#FFCE67";
