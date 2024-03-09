@@ -326,7 +326,7 @@ function win(player, move){
     isClickDisabled = true;
     const score = document.querySelector(`#player${playerWin}Score`);
     score.textContent = parseInt(score.textContent) + 1;
-
+    clearInterval(interval);
     document.querySelector('#winner').textContent = playerWin;
     document.querySelector('.hover').style.display = 'none';
     document.querySelector('#contentTimer').style.display = "none";
